@@ -1,3 +1,13 @@
+<div align="center">
+  <img src="public/images/brand/logo-mark.jpg" alt="Aurum & Ember Logo Mark" width="120" />
+  <br />
+  <img src="public/images/brand/logo-wordmark.jpg" alt="Aurum & Ember Logo" width="400" />
+</div>
+
+<br />
+
+![Aurum & Ember Banner](public/images/hero/hero.jpg)
+
 # Aurum & Ember
 
 Where fire, time, and devotion converge. A premium restaurant portfolio project showcasing modern web development, luxury design, and performant animations.
