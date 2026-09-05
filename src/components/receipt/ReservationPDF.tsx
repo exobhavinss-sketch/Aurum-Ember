@@ -222,7 +222,7 @@ export default function ReservationPDF({ reservation, qrCodeUrl }: ReservationPD
             <View style={[styles.col, { width: '100%' }]}>
               <Text style={styles.label}>Special Requests</Text>
               <View style={styles.requestsContainer}>
-                <Text style={[styles.valueText, { fontStyle: 'italic' }]} maxLines={3}>
+                <Text style={[styles.valueText, { fontStyle: 'italic' }]}>
                   "{reservation.requests}"
                 </Text>
               </View>

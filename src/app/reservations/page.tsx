@@ -103,8 +103,7 @@ export default function ReservationsPage() {
 
   const generatePDFBlob = async () => {
     const doc = <ReservationPDF reservation={reservationData} qrCodeUrl={qrCodeUrl} />;
-    const asPdf = pdf([]); // create an empty pdf instance
-    asPdf.updateContainer(doc);
+    const asPdf = pdf(doc);
     return await asPdf.toBlob();
   };
 
