@@ -15,10 +15,8 @@ function InstagramIcon({ className = "", size = 24 }: { className?: string; size
 }
 import { Button } from "@/components/ui/Button";
 import { DishCard, FeatureCard, TestimonialCard } from "@/components/ui/Card";
-import { Tag, Divider, Input } from "@/components/ui";
-import {
-  fadeUp, staggerContainer, staggerItem, imageReveal, fadeRight
-} from "@/lib/animations";
+import { Tag, Divider } from "@/components/ui";
+import { fadeUp, staggerContainer, staggerItem, imageReveal } from "@/lib/animations";
 import { SITE, CHEF, TESTIMONIALS, EXPERIENCES } from "@/lib/constants";
 
 // ═══════════════════════════════════════════
@@ -207,7 +205,7 @@ export default function HomePage() {
             </motion.div>
             <motion.div variants={staggerItem} className="flex flex-col items-center gap-2">
               <div className="text-xl font-display text-cream">#14</div>
-              <div className="text-xs tracking-widest text-gold uppercase">World's 50 Best</div>
+              <div className="text-xs tracking-widest text-gold uppercase">World&apos;s 50 Best</div>
             </motion.div>
             <motion.div variants={staggerItem} className="flex flex-col items-center gap-2">
               <div className="text-xl font-display text-cream">Outstanding Chef</div>

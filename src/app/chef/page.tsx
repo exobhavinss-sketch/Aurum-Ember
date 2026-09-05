@@ -52,12 +52,12 @@ export default function ChefPage() {
             </motion.p>
             <motion.p variants={staggerItem} className="mt-6 text-sand/80 text-lg leading-relaxed">
               After a decade of accumulating Michelin stars in Paris, Tokyo, and Copenhagen, Chef Voss realized 
-              that true mastery isn't found in adding more components to a plate, but in having the courage to strip them away. 
+              that true mastery isn&apos;t found in adding more components to a plate, but in having the courage to strip them away. 
               Aurum & Ember is the manifestation of this philosophy.
             </motion.p>
             <motion.blockquote variants={staggerItem} className="mt-10 pl-6 border-l-2 border-gold/30">
               <p className="font-display italic text-cream/80 text-xl leading-relaxed">
-                "{CHEF.philosophy}"
+                &ldquo;{CHEF.philosophy}&rdquo;
               </p>
             </motion.blockquote>
             <motion.div variants={staggerItem} className="mt-10 flex gap-4">
@@ -74,7 +74,7 @@ export default function ChefPage() {
             <h2 className="font-display text-cream text-3xl mb-6">The Culinary Team</h2>
             <p className="text-sand/80 max-w-2xl mx-auto leading-relaxed">
               A restaurant of this caliber requires an ecosystem of dedicated professionals. From our Sous Chefs to our 
-              Sommelier and Maître D', every member of our team is instrumental in delivering the Aurum & Ember experience.
+              Sommelier and Maître D&apos;, every member of our team is instrumental in delivering the Aurum & Ember experience.
             </p>
           </motion.div>
         </div>

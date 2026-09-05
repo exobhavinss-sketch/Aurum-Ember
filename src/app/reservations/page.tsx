@@ -46,6 +46,7 @@ const diningOptions = [
 
 export default function ReservationsPage() {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [reservationData, setReservationData] = useState<any>(null);
   const [qrCodeUrl, setQrCodeUrl] = useState("");
   const [isGenerating, setIsGenerating] = useState(false);

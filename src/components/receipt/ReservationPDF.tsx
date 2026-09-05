@@ -141,6 +141,7 @@ const styles = StyleSheet.create({
 });
 
 interface ReservationPDFProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   reservation: any;
   qrCodeUrl: string;
 }
@@ -223,7 +224,7 @@ export default function ReservationPDF({ reservation, qrCodeUrl }: ReservationPD
               <Text style={styles.label}>Special Requests</Text>
               <View style={styles.requestsContainer}>
                 <Text style={[styles.valueText, { fontStyle: 'italic' }]}>
-                  "{reservation.requests}"
+                  &quot;{reservation.requests}&quot;
                 </Text>
               </View>
             </View>

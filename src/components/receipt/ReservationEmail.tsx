@@ -1,7 +1,7 @@
 import React from 'react';
 import { SITE } from '@/lib/constants';
-
 interface ReservationEmailProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   reservation: any;
   qrCodeUrl?: string;
 }
@@ -86,12 +86,13 @@ export default function ReservationEmail({ reservation, qrCodeUrl }: Reservation
               {reservation.requests && (
                 <div style={{ marginTop: '30px' }}>
                   <p style={{ margin: '0 0 8px 0', fontSize: '10px', textTransform: 'uppercase', letterSpacing: '1px', color: '#8A837D' }}>Special Requests</p>
-                  <p style={{ margin: 0, fontSize: '14px', color: '#B8AFA6', fontStyle: 'italic', lineHeight: '1.6' }}>"{reservation.requests}"</p>
+                  <p style={{ margin: 0, fontSize: '14px', color: '#B8AFA6', fontStyle: 'italic', lineHeight: '1.6' }}>&quot;{reservation.requests}&quot;</p>
                 </div>
               )}
 
               {qrCodeUrl && (
                 <div style={{ marginTop: '40px', textAlign: 'center' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={qrCodeUrl} alt="Reservation QR Code" width="100" height="100" style={{ margin: '0 auto 12px auto', display: 'block', border: '4px solid #fff', borderRadius: '4px' }} />
                   <p style={{ margin: 0, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '1px', color: '#8A837D' }}>Scan to Verify</p>
                 </div>
