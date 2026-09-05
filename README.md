@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aurum & Ember
+
+Where fire, time, and devotion converge. A premium restaurant portfolio project showcasing modern web development, luxury design, and performant animations.
+
+## Tech Stack
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4 (Alpha)
+- **Animations**: Framer Motion
+- **Icons**: Lucide React / Custom SVGs
+- **Fonts**: Next.js Font Optimization (Cormorant Garamond, Inter, Outfit)
+
+## Features
+- ⚡ **Zero-Config Deployment**: Ready for Vercel, Netlify, and Render.
+- 🎨 **Luxury Design System**: Custom design tokens, typography scale, and fluid spacing.
+- ♿ **Accessibility**: WCAG 2.2 compliant, ARIA labels, semantic HTML, keyboard focus states, and reduced-motion support.
+- 🔍 **SEO Optimized**: Dynamic `sitemap.xml`, `robots.txt`, and injected Schema.org Restaurant structured data for rich snippets.
+- 📱 **Fully Responsive**: Flawless experience from mobile to 4K displays.
+- ✨ **Global Page Transitions**: Cinematic routing animations.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js 18.17 or later
 
+### Installation
+
+1. Clone the repository and install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment Guides
 
-## Learn More
+This project leverages the Next.js App Router and is deeply optimized for zero-configuration deployments.
 
-To learn more about Next.js, take a look at the following resources:
+### Deploy to Vercel (Recommended)
+Vercel is the creator of Next.js and provides the most seamless hosting experience.
+1. Push your code to a GitHub repository.
+2. Log into [Vercel](https://vercel.com/) and click **Add New > Project**.
+3. Import your repository. Vercel will automatically detect the Next.js framework.
+4. Click **Deploy**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Deploy to Netlify
+1. Push your code to a GitHub repository.
+2. Log into [Netlify](https://netlify.com/) and click **Add new site > Import an existing project**.
+3. Select your repository. Netlify automatically detects Next.js and configures the build settings (`npm run build` and `.next` directory).
+4. Click **Deploy site**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Deploy to Render
+1. Push your code to a GitHub repository.
+2. Log into [Render](https://render.com/) and click **New > Web Service**.
+3. Connect your repository.
+4. Render should auto-detect the Node environment. Ensure the Build Command is `npm run build` and the Start Command is `npm run start`.
+5. Click **Create Web Service**.
 
-## Deploy on Vercel
+## Project Structure
+- `/src/app`: Next.js App Router pages, layouts, globals, sitemap, robots, and error handling.
+- `/src/components/layout`: Core structural components (Navbar, Footer, PageTransition).
+- `/src/components/ui`: Reusable primitives (Buttons, Cards, Tags).
+- `/src/lib`: Utilities, animation variants, and global constants.
+- `/public/images`: Organized static assets for hero, dishes, and interiors.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Developed By
+Designed & Developed by [NextWebHosting](https://nextwebhostingdev.vercel.app/)
