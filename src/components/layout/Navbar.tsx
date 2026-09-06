@@ -50,7 +50,16 @@ export function Navbar() {
       >
         <div className="max-w-[var(--container-max)] mx-auto px-[var(--container-padding)] flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="relative z-10 flex items-center gap-3 group" aria-label="Aurum & Ember - Home">
+          <Link 
+            href="/" 
+            className="relative z-10 flex items-center gap-3 group" 
+            aria-label="Aurum & Ember - Home"
+            onClick={() => {
+              if (typeof window !== "undefined" && window.location.pathname === "/") {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
+          >
             {/* Logo Mark SVG */}
             <svg width="32" height="40" viewBox="0 0 32 40" fill="none" className="text-gold transition-colors duration-300 group-hover:text-gold-light">
               <path d="M16 0C16 0 4 14 4 24C4 30.627 9.373 36 16 36C22.627 36 28 30.627 28 24C28 14 16 0 16 0Z" fill="currentColor" fillOpacity="0.2"/>
