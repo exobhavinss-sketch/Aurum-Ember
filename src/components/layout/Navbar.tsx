@@ -134,7 +134,7 @@ export function Navbar() {
               exit="closed"
               className="fixed top-0 right-0 bottom-0 w-full max-w-md bg-obsidian z-40 lg:hidden border-l border-white/[0.04]"
             >
-              <div className="flex flex-col justify-center h-full px-12 py-20">
+              <div className="flex flex-col h-full px-12 pt-32 pb-12 overflow-y-auto">
                 <motion.nav
                   variants={menuStagger}
                   initial="closed"
@@ -156,7 +156,7 @@ export function Navbar() {
                       </Link>
                     </motion.div>
                   ))}
-                  <motion.div variants={menuItem} className="pt-6">
+                  <motion.div variants={menuItem} className="pt-6 mt-auto pb-4">
                     <Link href="/reservations" onClick={() => setMenuOpen(false)}>
                       <Button variant="primary" size="lg" className="w-full">
                         Reserve Your Evening
