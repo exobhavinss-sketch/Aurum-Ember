@@ -32,7 +32,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="inline-flex flex-col mb-6 group">
+            <Link 
+              href="/" 
+              className="inline-flex flex-col mb-6 group"
+              onClick={() => {
+                if (typeof window !== "undefined" && window.location.pathname === "/") {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }
+              }}
+            >
               <span className="font-display text-2xl text-cream tracking-wide">Aurum</span>
               <span className="font-display text-xs text-gold/60 tracking-[0.3em] uppercase">& Ember</span>
             </Link>
@@ -50,6 +58,11 @@ export function Footer() {
                   <Link
                     href={link.href}
                     className="text-sm text-sand hover:text-gold transition-colors duration-300 inline-flex items-center gap-1 group"
+                    onClick={() => {
+                      if (typeof window !== "undefined" && window.location.pathname === link.href) {
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }
+                    }}
                   >
                     {link.label}
                     <ArrowUpRight size={12} className="opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
