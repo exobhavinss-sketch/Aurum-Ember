@@ -72,11 +72,37 @@ export default function ChefPage() {
           <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
             <Divider ornamental className="mb-12 mx-auto" />
             <h2 className="font-display text-cream text-3xl mb-6">The Culinary Team</h2>
-            <p className="text-sand/80 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sand/80 max-w-2xl mx-auto leading-relaxed mb-16">
               A restaurant of this caliber requires an ecosystem of dedicated professionals. From our Sous Chefs to our 
               Sommelier and Maître D&apos;, every member of our team is instrumental in delivering the Aurum & Ember experience.
             </p>
           </motion.div>
+
+          {/* Team Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+            {[
+              { src: "/images/team/sous-chef.jpg", name: "Elena Rossi", role: "Chef de Cuisine" },
+              { src: "/images/team/sommelier.jpg", name: "Julian Vance", role: "Head Sommelier" },
+              { src: "/images/team/pastry-chef.jpg", name: "Amelia Chen", role: "Executive Pastry Chef" },
+              { src: "/images/team/maitre-d.jpg", name: "Marcus Thorne", role: "Maître D'" }
+            ].map((member, i) => (
+              <motion.div 
+                key={member.name}
+                variants={fadeUp} 
+                initial="hidden" 
+                whileInView="visible" 
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="group cursor-pointer"
+              >
+                <div className="relative aspect-[3/4] rounded-xl overflow-hidden mb-4">
+                  <Image src={member.src} alt={member.name} fill className="object-cover transition-transform duration-700 group-hover:scale-105" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
+                </div>
+                <h3 className="font-display text-cream text-xl mb-1">{member.name}</h3>
+                <p className="text-gold/70 text-sm font-accent uppercase tracking-wider">{member.role}</p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

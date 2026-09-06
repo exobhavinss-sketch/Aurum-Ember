@@ -16,6 +16,13 @@ const galleryImages = [
   { src: "/images/interior/bar.jpg", alt: "Cocktail bar", category: "Interior" },
   { src: "/images/dishes/signature.jpg", alt: "Signature dish", category: "Cuisine" },
   { src: "/images/dishes/ingredients.jpg", alt: "Fresh seasonal ingredients", category: "Cuisine" },
+  { src: "/images/interior/wine-cellar.jpg", alt: "Wine Cellar", category: "Interior" },
+  { src: "/images/interior/chefs-counter.jpg", alt: "Chef's Counter", category: "Interior" },
+  { src: "/images/interior/lounge.jpg", alt: "Lounge Area", category: "Interior" },
+  { src: "/images/team/sous-chef.jpg", alt: "Sous Chef in action", category: "Team" },
+  { src: "/images/team/sommelier.jpg", alt: "Head Sommelier", category: "Team" },
+  { src: "/images/team/pastry-chef.jpg", alt: "Pastry Chef finishing dessert", category: "Team" },
+  { src: "/images/team/maitre-d.jpg", alt: "Maître D' welcoming guests", category: "Team" },
 ];
 
 const categories = ["All", "Interior", "Cuisine", "Team"];
